@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Receta fabada</title>
+    <style>
+        body{
+            background-image: url("fondo.jpg"); 
+        }
+        h1{
+            color: darkblue;
+            text-align: center;
+            background-color: aliceblue;
+            font-size: 50px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        #foto {
+            text-align: center;
+        }
+
+        #datos{
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        table, td{
+            border: black 5px solid;
+            border-collapse: collapse;
+            background-color: aliceblue;
+            font-weight: bold;     
+            margin: 0 auto;
+            font-size: 30px;
+            margin-bottom: 5%;
+        }
+        #ingredientes {
+            width: 20%;
+            display: inline-block;
+            background-color: aliceblue;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+        #elaboracion{
+            width: 70%;
+            float: right;
+            background-color: aliceblue;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+        #recomendacion{
+            width: 100%;
+            float: left;
+            background-color: aliceblue;
+            font-size: 20px;
+            border: 2px solid black;
+            margin-top: 5%;
+        }
+        #recomendacion ul {
+            list-style-image: url("icono2.jpg");
+        }
+        #formulario{
+            width: 40%;
+            float: left;
+            background-color: aliceblue;
+            font-size: 20px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 5%;
+            align-content: center;
+            padding: 0 5%;
+            padding-bottom: 5%;
+        }
+        #formulario input {
+            display: block;
+            border-radius: 10px;
+            
+        }
+        #formulario textarea{
+            border-radius: 10px;
+        }
+        ul{
+            list-style-image: url("icono.png") ;
+        }
+        [data-cantidad]{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Receta de Fabada Asturiana en Crock Pot</h1>
+    <article>
+        <section id="foto">
+            <img src="fabada.jpg" alt="foto plato fabada">
+        </section>
+        <section id="datos">
+            <table>
+                <tr></tr>
+                    <td>Preparación</td>
+                    <td>Cocción</td>
+                    <td>Total</td>
+                    <td>Reciones</td>
+                <tr></tr>
+                    <td>15m + 10h remojo</td>
+                    <td>7 h</td>
+                    <td>7 h 15 m</td>
+                    <td>6</td>
+            </table>
+        </section>
+        <section id="ingredientes">
+            <ul>
+                    <h3>Ingredientes</h3>
+                    <li data-cantidad="500g">500 gr de faba asturiana</li>
+                    <li data-cantidad="2">2 chorizos asturianos</li>
+                    <li data-cantidad="2">2 morcillas asturianas</li>
+                    <li data-cantidad="150g">150 gr de lacón</li>
+                    <li data-cantidad="150g">150 gr de panceta ahumada</li>
+                    <li data-cantidad="1">1 hueso de jamón</li>
+                    <li >Azafrán</li>
+                    <li>Aceite de oliva virgen extra</li>
+                    <li>Agua</li>
+                </ul>  
+        </section>
+        <section id="elaboracion">
+            <ol>
+                <h3>Elaboración</h3>
+                <li>Pon las fabes en remojo durante 10 horas. Pon también en remojo el lacón en otro recipiente para quitar parte de la sal.</li>
+                <li>Pasado ese tiempo, escurre el agua y coloca las fabes en el slow cocker. Añade las carnes y embutidos e incorpora agua hasta que 
+                    cubra la legumbre aproximadamente un dedo. En sconveniente controlar la cantidad de agua que se añade para que la fabada no quede aguada.</li>
+                <li>Añade dos cucharadas de aceite de oliva virgen extra y unas hebras de azafrán.</li>
+                <li>Programa 7 horas en BAJA temperatura.</li>
+                <li>Prueba el punto de la legumbre. Debe de estar tierna y entera, muy suave. 
+                    Si aún no lo está, cocina durante un tiempo más comprobando en tramos de media hora hasta que esté lista.</li>
+                <li>Prueba y rectifica el punto de sal si es necesario. Deja que repose durante unas 3 horas para que tome cuerpo.</li>
+                <li>Para que el caldo ligue bien, mueve la olla en círculo, no la remuevas con la cuchara pues las fabes se romperían.</li>
+                <li>Sirve muy caliente con los embutidos y las carnes troceados.</li>
+            </ol>
+        </section>
+    </article>
+    <article>
+        <section id="recomendacion">
+            <ul>
+            <h3>Recomendaciones</h3>
+            <li>El éxito de la fabada asturiana depende tanto del cuidado en la cocción como de la elección de un buen género. 
+                Utiliza fabas tiernas y carnes y embutidos de calidad</li>
+            <li>Manipula lo menos posible el guiso durante y tras la cocción. Las fabas saldrán tiernas y mantecosas, pero si las remueves con cucharones o paletas (no hace falta) se romperán. </li>
+            <li>Si quieres ligar el guiso, solo tienes que poner la olla desmontable sobre un paño y realizar movimientos circulares hasta que quede al gusto.</li>
+            <li>Normalmente en la fabada no se utiliza sal porque la que aportan las carnes y embutidos es suficiente. Espera hasta el final para probar la fabada y añade sal solo si la necesita.</li>
+        </ul>
+        </section>
+    </article>
+    <article>
+        <section id="formulario">
+            <h3>Aqui puedes enviarnos tus comentario o ideas.</h3>
+            <form action="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" maxlength="60" size="50">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  maxlength="60" size="50"><br>
+                <textarea name="comentarios" id="comentarios" cols="50" rows="10" maxlength="500" placeholder="Escribe aqui tus comentarios"></textarea><br>
+                <button>Enviar</button>
+            </form>
+        </section>
+    </article>
+</body>
+</html>
+<!--
+
+Imagina también que existe un formulario debajo de la receta para que los usuarios dejen sus comentarios y/o preguntas. Recuerda, es ficticio, 
+pero queremos comprobar cómo aplicas los conocimientos adquiridos a estructuras cada vez más complejas.-->
